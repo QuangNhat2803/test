@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+
+    .first_content {
+        display: flex;
+        flex-direction: row;
+        height: 60vh;
+    }
+
+    .first_section {
+        width: 30%;
+        background-color: #ccc;
+        background-image: url('https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .first_article {
+        width: 70%;
+        background-color: powderblue;
+    }
+    
+    #video_ytb{
+        position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+    }
+
+    .second_content {
+        display: flex;
+        flex-direction: row;
+        height: 60vh;
+    }
+
+    .second_section {
+        width: 30%;
+        background-color: #ccc;
+        background-image: url('https://images.unsplash.com/photo-1485970247670-34cd80f5a996?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .second_article {
+        width: 70%;
+        background-color: rgb(221, 245, 248);
+    }
+
+    footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+</style>
+
+<body>
+    <header>
+        <h2>This is a Heading</h2>
+    </header>
+    <div class="first_content">
+        <section class="first_section"></section>
+        <article class="first_article">
+            <iframe id="video_ytb" width="620" height="415" src="https://www.youtube.com/embed/nqye02H_H6I" title="4K Relaxing Nature Sounds - Short Video Clips of Nature" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </div>
+    <div class="second_content">
+        <article class="second_article">
+            <h2>My Forms</h2>
+
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John" required minlength="6"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+                <label for="gender">Choose your gender:</label>
+                <select id="gender" name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select><br><br>
+                <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+                <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label><br><br>
+                <input type="submit" value="Submit">
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            </form>
+
+
+        </article>
+        <section class="second_section"></section>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>
